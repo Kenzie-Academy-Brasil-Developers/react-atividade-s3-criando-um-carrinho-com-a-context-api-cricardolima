@@ -3,7 +3,9 @@ import { CartContext } from "../../Providers/cart";
 import { ProductListContext } from "../../Providers/productsList"
 
 const Button = ({type, item}) => {
+    // eslint-disable-next-line 
     const { cart, addToCart, removeFromCart } = useContext(CartContext);
+    // eslint-disable-next-line 
     const { productList, addToProductList, removeFromProductList } = useContext(ProductListContext)
 
     const text = type === "productList" ? "Add to cart" : "Remove from cart";
